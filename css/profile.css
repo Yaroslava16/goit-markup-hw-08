@@ -301,6 +301,12 @@ p {
   margin: auto;
 }
 
+@media screen and (max-width: 480px) {
+  .conteiner {
+    width: 480px;
+  }
+}
+
 .line {
   border-bottom: 1px solid #ececec;
   width: auto;

@@ -49,3 +49,9 @@ p {
   margin: auto;
 }
 
+@media screen and (max-width: 480px) {
+  .conteiner {
+  width: 480px;
+  }
+}
+
