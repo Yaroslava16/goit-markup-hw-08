@@ -10,8 +10,15 @@
     color: $title-text-color;
   }
 
-  .employment-list {
-    display: flex;
+  @media screen and (max-width: 767px) {
+    .title-clients {
+    padding-top: 60px;
+    padding-bottom: 30px;
+    }
+  }
+
+  .clients-list {
+    // display: flex;
   }
 
   .link-clients {

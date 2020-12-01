@@ -1,12 +1,12 @@
 .command {
-  width: auto;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin: auto;
+  // width: auto;
+  // padding-right: 15px;
+  // padding-left: 15px;
+  // margin: auto;
   
   background-color: $secondary-accent;
 }
-  
+
 .title-employment {
   margin: 0;
   padding-top: 94px;
@@ -20,9 +20,20 @@
   color: $title-text-color;
 }
 
+@media screen and (max-width: 767px) {
+  .title-employment {
+  padding-top: 60px;
+  padding-bottom: 30px;
+  
+  font-size: 28px;
+  line-height: 1.18;
+  }
+}
+
+
 .employment-list {
-  display: flex;
-  justify-content: center;
+  // display: flex;
+  // justify-content: center;
 }
 
 .card-command {
@@ -34,6 +45,19 @@
   0px 2px 1px rgba(0, 0, 0, 0.2);
   background: $white-color;
 }
+
+@media screen and (max-width: 767px) {
+  .card-command {
+  margin-bottom: 30px;
+  text-align: center;
+  }
+
+  .card-command:last-child {
+    margin-bottom: 0;
+  }
+}
+
+
 
 // .list-p {
 //   margin-right: 30px;
@@ -49,10 +73,10 @@
 }
 
 .name {
-  display: flex;
+  // display: flex;
   margin: 0;
   padding-bottom: 10px;
-  justify-content: center;
+  // justify-content: center;
   
   font-weight: 500;
   font-size: 16px;
@@ -62,8 +86,8 @@
 }
 
 .position {
-  display: flex;
-  justify-content: center;
+  // display: flex;
+  // justify-content: center;
   padding-bottom: 16px;
   margin: 0;
   
@@ -72,12 +96,28 @@
   line-height: 1.18;
 }
 
+@media screen and (max-width: 767px) {
+  .position {
+  padding-top: 60px;
+  }
+}
+
 .conteiner-icon {
   display: flex;
   justify-content: space-around;
   margin-right: 32px;
   margin-bottom: 30px;
   margin-left: 32px;
+}
+
+@media screen and (max-width: 767px) {
+  .conteiner-icon {
+  margin-bottom: 24px;
+  }
+
+  .conteiner-icon:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .svg-link {
