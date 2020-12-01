@@ -1,0 +1,115 @@
+.logo {
+    margin-top: 24px;
+    margin-right: 93px;
+    margin-bottom: 25px;
+    
+    color: $title-text-color;
+    text-decoration: none;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.19;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+     &:hover {
+    color: $accent-color;
+    }
+}
+
+.logo-part {
+    color: $accent-color;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+}
+
+.site-nav {
+    display: flex;
+    padding-top: 32px;
+
+
+ .item {
+    margin-right: 50px;
+ }
+
+ .item:last-child {
+    margin-right: 0;
+ }
+
+ a.current:visited {
+    color: $accent-color;
+ }
+}
+
+.site-nav a,
+.auth-nav a {
+    color: $title-text-color;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.site-nav a:hover, 
+.site-nav a:focus,
+.auth-nav a:hover, 
+.auth-nav a:focus {
+    color: $accent-color;
+}
+
+a.current::after {
+    content: "";
+    display: block;
+    width: 100%;
+    margin-top: 28px;
+    height: 4px;
+    border-radius: 2px;
+    color: $accent-color;
+    background-color: $accent-color;
+} 
+
+.auth-nav {
+    display: flex;
+    margin-left: auto;
+
+    .item {
+        margin-right: 50px;
+    }
+
+    .item + .item {
+        margin-right: 50px;
+    }
+}
+
+.contacts a {
+    color: $primary-text-color;
+}
+
+.link-nav {
+    display: flex;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover .svg-nav,
+    &:focus .svg-nav {
+        fill: $accent-color;
+    }
+}
+
+.svg-nav {
+    margin-right: 10px;
+    fill: $primary-text-color;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

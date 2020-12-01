@@ -1,0 +1,53 @@
+.title-clients {
+    padding-top: 86px;
+    padding-bottom: 50px;
+    margin: 0;
+  
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    color: $title-text-color;
+  }
+
+  .employment-list {
+    display: flex;
+  }
+
+  .link-clients {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 90px;
+    color: $comand-icon;
+    border: 1px solid $comand-icon;
+    border-radius: 4px;
+    flex-basis: calc(100% / 6 - 30px);
+    margin-right: 30px;
+    margin-bottom: 94px;
+  
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  
+    &:hover,
+    &:focus {
+      border-color: $accent-color;
+    }
+  
+    &:hover .icon-clients,
+    &:focus .icon-clients {
+    fill: $accent-color;
+    }
+  }
+
+  .clients-svg:last-child {
+    margin-right: 0;
+  }
+  
+  .icon-clients {
+    fill: $comand-icon;
+  
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }

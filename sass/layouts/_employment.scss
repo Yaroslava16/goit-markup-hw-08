@@ -1,0 +1,43 @@
+.benefits-list{
+    margin: 0;
+    padding: 0;
+  }
+
+.title-employment {
+    margin: 0;
+    padding-top: 94px;
+    padding-bottom: 50px;
+    
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+
+    color: $title-text-color;
+}
+
+.img-list {
+    margin-bottom: 94px;
+    display: flex;
+}
+
+.item-employment {
+    position: relative;
+    margin-right: 30px;
+}
+
+.label {
+    position: absolute;
+    bottom: 0;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    width: 100%;
+  
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    text-align: center;
+    color: $white-color;
+    background-color: rgba(47, 48, 58, 0.8);
+}  
+
