@@ -856,6 +856,12 @@ a.current::after {
   margin-bottom: -94px;
 }
 
+@media screen and (max-width: 480px) {
+  .list-p {
+    margin-bottom: 30px;
+  }
+}
+
 .icon::before {
   content: "";
   display: block;
@@ -877,6 +883,12 @@ a.current::after {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 480px) {
+  .section-title {
+    text-align: center;
+  }
 }
 
 .section-text {
