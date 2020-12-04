@@ -295,16 +295,28 @@ p {
 }
 
 .conteiner {
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin: auto;
 }
 
-@media screen and (max-width: 767px) {
+@media (min-width: 480px) {
   .conteiner {
     margin: 0;
     width: 480px;
+  }
+}
+
+@media (min-width: 768px) {
+  .conteiner {
+    width: 768px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .conteiner {
+    width: 1200px;
   }
 }
 
@@ -856,14 +868,22 @@ a.current::after {
   }
 }
 
-.benefits-list {
-  margin: 0;
-  padding: 0;
+@media (min-width: 768px) {
+  .benefits-set {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
-.benefits-set {
-  margin-right: -30px;
-  margin-bottom: -94px;
+@media (min-width: 768px) {
+  .list-p {
+    flex-basis: calc(100% /2 - 30px);
+    margin-right: 30px;
+  }
+}
+
+.list-p:nth-child(2n) {
+  margin-right: 0;
 }
 
 @media screen and (max-width: 767px) {
@@ -984,7 +1004,7 @@ a.current::after {
   color: #212121;
 }
 
-@media screen and (max-width: 767px) {
+@media (min-width: 1200px) {
   .title-employment {
     padding-top: 60px;
     padding-bottom: 30px;

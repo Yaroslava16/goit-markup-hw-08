@@ -18,18 +18,15 @@
   text-align: center;
 
   color: $title-text-color;
-}
 
-@media screen and (max-width: 767px) {
-  .title-employment {
-  padding-top: 60px;
-  padding-bottom: 30px;
-  
-  font-size: 28px;
-  line-height: 1.18;
+  @include for-size (desktop) {
+    padding-top: 60px;
+    padding-bottom: 30px;
+      
+    font-size: 28px;
+    line-height: 1.18;
   }
 }
-
 
 .employment-list {
   // display: flex;
