@@ -1,8 +1,12 @@
-@media screen and (max-width: 767px) {
-    .employment {
-    display: none;
+.employment {
+    @include for-size(mobile) {
+        display: none;
     }
-  }
+    
+    @include for-size(tablet) {
+        display: none;
+    }
+}
 
 .benefits-list{
     margin: 0;
