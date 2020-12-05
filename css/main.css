@@ -879,7 +879,7 @@ a.current::after {
 
 @media (min-width: 768px) {
   .conteiner-benefits {
-    width: 100%;
+    width: 768px;
     padding-left: 15px;
     margin: auto;
   }
@@ -887,7 +887,7 @@ a.current::after {
 
 @media (min-width: 1200px) {
   .conteiner-benefits {
-    width: 100%;
+    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin: auto;
@@ -925,12 +925,10 @@ a.current::after {
   }
 }
 
-.list-p:nth-last-child(-n + 2) {
-  margin-bottom: 60px;
-}
-
-.list-p:nth-child(2n) {
-  margin-right: 0;
+@media (min-width: 768px) {
+  .list-p:nth-child(2n) {
+    margin-right: 0;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -938,10 +936,6 @@ a.current::after {
     margin-right: 30px;
     flex-basis: calc(100% /4 - 30px);
   }
-}
-
-.list-p:nth-child(2n) {
-  margin-right: 30px;
 }
 
 .icon::before {
@@ -1013,9 +1007,9 @@ a.current::after {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .employment {
-    display: block;
+    display: flex;
   }
 }
 

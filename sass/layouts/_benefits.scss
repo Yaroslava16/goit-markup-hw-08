@@ -7,13 +7,13 @@
     }
     
     @include for-size(tablet) {
-        width: 100%;
+        width: 768px;
         padding-left: 15px;
         margin: auto;
     }  
 
     @include for-size(desktop) {
-        width: 100%;
+        width: 1200px;
         padding-left: 15px;
         padding-right: 15px;
         margin: auto;
@@ -46,12 +46,14 @@
         margin-bottom: 30px; 
     }
 
-    &:nth-last-child(-n + 2) {
-        margin-bottom: 60px;
-    }
+    // &:nth-last-child(-n + 2) {
+    //     margin-bottom: 60px;
+    // }
  
     &:nth-child(2n) {
-        margin-right: 0;
+        @include for-size(tablet) {
+            margin-right: 0;
+        }
     }
 
     @include for-size(desktop) {
@@ -59,9 +61,9 @@
         flex-basis: calc(100% /4 - 30px);
     }
 
-    &:nth-child(2n) {
-        margin-right: 30px; 
-    }
+    // &:nth-child(2n) {
+    //     margin-right: 30px; 
+    // }
 }
 
 .icon::before {
