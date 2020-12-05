@@ -9,17 +9,12 @@
 
     @include for-size(desktop) {
         display: flex;
+        justify-content: center;
     }
 }
 
-.benefits-list{
-    margin: 0;
-    padding: 0;
-  }
-
 .title-employment {
     margin: 0;
-    padding-top: 94px;
     padding-bottom: 50px;
     
     font-weight: bold;
@@ -33,6 +28,8 @@
 .img-list {
     margin-bottom: 94px;
     display: flex;
+    // justify-content: center;
+    // align-items: center;
 }
 
 .item-employment {
