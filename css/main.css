@@ -880,7 +880,7 @@ a.current::after {
 
 @media (min-width: 1200px) {
   .conteiner-benefits {
-    width: 100%;
+    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin: auto;
@@ -892,13 +892,6 @@ a.current::after {
   .benefits-set {
     display: flex;
     flex-wrap: wrap;
-  }
-}
-
-@media (min-width: 1200px) {
-  .benefits-set {
-    margin-right: -30px;
-    margin-bottom: -94px;
   }
 }
 
@@ -931,7 +924,7 @@ a.current::after {
 @media (min-width: 1200px) {
   .list-p {
     margin-right: 30px;
-    flex-basis: calc((100% - 30px)/4);
+    flex-basis: calc((100% - 30px * 3)/4);
   }
 }
 
