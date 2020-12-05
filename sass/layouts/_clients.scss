@@ -25,14 +25,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 170px;
-    height: 90px;
+    // width: 170px;
+    // height: 90px;
     color: $comand-icon;
     border: 1px solid $comand-icon;
     border-radius: 4px;
-    flex-basis: calc(100% / 6 - 30px);
+    // flex-basis: calc(100% / 6 - 30px);
     margin-right: 30px;
-    margin-bottom: 94px;
+    // margin-bottom: 94px;
   
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -45,6 +45,19 @@
     &:hover .icon-clients,
     &:focus .icon-clients {
     fill: $accent-color;
+    }
+
+    @include for-size(mobile) {
+      width: 210px;
+      height: 90px;
+
+      flex-basis: calc((100% - 30px)/2);
+    }
+
+    &:nth-child(2n) {
+      @include for-size(mobile) {
+      margin-right: 0;
+      }
     }
   }
 
