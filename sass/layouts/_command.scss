@@ -17,7 +17,7 @@
     color: $title-text-color;
   }
 
-  @include for-size (mobile) {
+  @include for-size (desktop) {
     margin: 0;
     padding-top: 94px;
     padding-bottom: 50px;
