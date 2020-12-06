@@ -3,25 +3,26 @@ footer {
 }
 
 .footer-contacts {
-    @include for-size(mobile) {
+    @include for-size(mobile-only) {
         margin-bottom: 60px;
-       text-align: center;
+        text-align: center;
+    }
+
+    @include for-size(tablet) {
+        margin-right: 165px;
+        text-align: center;
+    }
+
+    @include for-size(desktop) {
+        margin-right: 70px;
+        text-align: start;
     }
 }
 
 .footer-logo {
-    // display: inline-block;
-    
-    // margin-right: 0;  
-    // margin-right: 93px;
-    // text-decoration: none;
-    // 
-    // font-size: 26px;
-    // line-height: 1.19;
-    
     color: $white-color;
 
-    @include for-size(mobile) {
+    @include for-size(mobile-only) {
         display: block;
         margin-bottom: 20px;
         padding-top: 60px;
@@ -30,22 +31,47 @@ footer {
         font-style: normal;
         font-weight: bold;
         font-size: 24px;
-        line-height: 1.17;
-       
+        line-height: 1.17; 
+    }
+
+    @include for-size(tablet) {
+        display: block;
+        margin-bottom: 20px;
+        padding-top: 60px;
+
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 1.17; 
+    }
+
+    @include for-size(desktop) {
+        display: inline-block;
+    
+        margin-right: 0;  
+        margin-right: 93px;
+        padding-top: 0;
+        text-decoration: none;
+        
+        font-size: 26px;
+        line-height: 1.19; 
     }
 }
 
 .footer-conteiner {
-    // display: flex;
-    // align-items: baseline;
-    // 
-    // 
-    // margin: auto; 
+    @include for-size(tablet) {
+        padding-bottom: 60px;
+    }
 
     @include for-size(desktop) {
+       display: flex;
+       align-items: baseline;
        width: 1200px;
        padding: 60px 15px; 
        margin: 0;
+       margin-right: auto;
+       margin-left: auto;
     }
 }
 
@@ -53,16 +79,18 @@ footer {
     display: flex;
     // justify-content: space-around; 
 
-    @include for-size(mobile) {
+    @include for-size(mobile-only) {
         justify-content: center;
         margin-bottom: 60px;
     }
 
+    @include for-size(desktop) {
+        flex-wrap: nowrap;
+    }
 
     .footer-item {
         margin-right: 10px;
     
-
         &:last-child {
             margin-right: 0;
         }
@@ -70,12 +98,22 @@ footer {
 }
 
 .social-links {
-    @include for-size (mobile) {
+    @include for-size (mobile-only) {
         text-align: center;
     }
 
     @include for-size(desktop){
-        margin-left: 70px;
+        padding-top: 12px;
+    }
+}
+
+.footer-tablet {
+    @include for-size(tablet) {
+        display: flex;
+        justify-content: center;
+    }
+
+    @include for-size(desktop) {
         margin-right: 93px;
     }
 }
@@ -88,9 +126,20 @@ footer {
     text-transform: uppercase;
     color: $white-color;
 
-    @include for-size(mobile){
+    @include for-size(mobile-only) {
         text-align: center;
     }
+
+    @include for-size(tablet) {
+        padding-top: 60px;
+        text-align: center;
+    }
+
+    @include for-size(desktop) {
+        padding-top: 0;
+        text-align: start;
+    }
+    
 }
 
 .footer-link {
@@ -114,4 +163,6 @@ footer {
         background-color: $accent-color;
     }
 }
+
+
 

@@ -39,7 +39,12 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-  @include for-size(mobile) {
+  @include for-size(mobile-only) {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  @include for-size(tablet) {
     margin-right: auto;
     margin-left: auto;
   }
