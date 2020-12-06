@@ -859,12 +859,6 @@ a.current::after {
   padding: 0;
 }
 
-.card-set {
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 94px;
-}
-
 .section-item {
   flex-basis: calc((100% - 60px) / 3);
   border: 1px solid #eeeeee;
