@@ -689,17 +689,38 @@ p {
   border: none;
 }
 
-.btn-conteiner {
-  width: 1200px;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin: auto;
-  margin-bottom: 34px;
+@media (max-width: 767px) {
+  .btn-conteiner {
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: 768px) {
+  .btn-conteiner {
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .btn-conteiner {
+    margin-bottom: 50px;
+  }
 }
 
 .btn-group {
   display: flex;
-  justify-content: center;
+}
+
+@media (max-width: 767px) {
+  .btn-group {
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 768px) {
+  .btn-group {
+    justify-content: center;
+  }
 }
 
 .btn-group button {
@@ -728,6 +749,12 @@ p {
   background-color: #2196F3;
   outline: none;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+@media (max-width: 767px) {
+  .btn-item:nth-child(n + 4) {
+    margin-top: 15px;
+  }
 }
 
 .btn-item:nth-child(-n + 4) {
