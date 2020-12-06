@@ -1229,9 +1229,11 @@ a.current::after {
   }
 }
 
-.employment-list {
-  display: flex;
-  flex-wrap: wrap;
+@media (min-width: 768px) {
+  .employment-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 @media (max-width: 767px) {

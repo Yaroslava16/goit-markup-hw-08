@@ -42,8 +42,10 @@
 }
 
 .employment-list {
-  display: flex;
+  @include for-size(tablet) {
+    display: flex;
   flex-wrap: wrap;
+  }
 }
 
 .card-command {
