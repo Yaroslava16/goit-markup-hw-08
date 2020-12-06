@@ -18,13 +18,13 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 
-  &:not(:nth-child(3n)) {
-    margin-right: 30px;
-  }
+  // &:not(:nth-child(3n)) {
+  //   margin-right: 30px;
+  // }
 
-  &:not(:nth-child(-n + 3)) {
-    margin-top: 30px;
-  }
+  // &:not(:nth-child(-n + 3)) {
+  //   margin-top: 30px;
+  // }
 
   &:hover,
   &:focus {

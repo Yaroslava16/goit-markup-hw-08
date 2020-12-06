@@ -3,39 +3,47 @@
     margin: 0;
   }
 
-  .benefits-list{
-    margin: 0;
-    padding: 0;
-}
-
 .card-set {
     // display: flex;
     // flex-wrap: wrap;
     // margin-bottom: 94px;
+
+    @include for-size(mobile-only) {
+      margin-bottom: 60px;
+    }
   }
 
-  .section-item {
-    flex-basis: calc((100% - 60px) / 3);
-    border: 1px solid $border-line;
+.section-item {
+  flex-basis: calc((100% - 60px) / 3);
+  border: 1px solid $border-line;
   
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  
+  @include for-size(mobile-only) {
+    margin-bottom: 30px;
   }
 
-  .section-item:not(:nth-child(3n)) {
-    margin-right: 30px;
+  &:last-child {
+    @include for-size(mobile-only) {
+      margin-bottom: 0;
+    }
   }
+
+  // &:not(:nth-child(3n)) {
+  //   margin-right: 30px;
+  // }
   
-  .section-item:not(:nth-child(-n + 3)) {
-    margin-top: 30px;
-  }
+  // &:not(:nth-child(-n + 3)) {
+  //   margin-top: 30px;
+  // }
   
-  .section-item:hover,
-  .section-item:focus {
+  &:hover,
+  &:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
-
+}
   .section-link {
     display: block;
   }
@@ -83,10 +91,23 @@
   
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    @include for-size(mobile-only) {
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 72px 24px;
+  
+      width: 100%;
+    }
   }
 
   .capabilities {
-    padding: 0px 20px 24px;
+    // padding: 0px 20px 24px;
+    @include for-size(mobile-only) {
+      padding-left: 24px;
+      padding-right: 24px;
+    }
   }
   
   .title-capabilities {
@@ -105,4 +126,9 @@
     line-height: 1.87;
   
     color: $primary-text-color;
+
+    @include for-size(mobile-only) {
+      padding-bottom: 20px;
+    }
+    
   }
