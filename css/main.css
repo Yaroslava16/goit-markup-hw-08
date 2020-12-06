@@ -1220,6 +1220,9 @@ a.current::after {
 
 @media (min-width: 768px) {
   .title-clients {
+    padding-top: 60px;
+    padding-bottom: 30px;
+    font-size: 28px;
     line-height: 1.17;
   }
 }
@@ -1282,6 +1285,12 @@ a.current::after {
 @media (min-width: 768px) {
   .clients-svg {
     min-width: 226px;
+  }
+}
+
+@media (min-width: 768px) {
+  .clients-svg:nth-child(3n) {
+    margin-right: 0;
   }
 }
 
