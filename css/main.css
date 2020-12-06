@@ -901,12 +901,27 @@ a.current::after {
   text-transform: uppercase;
 }
 
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
   .hero .hero-title {
+    margin-right: auto;
+    margin-left: auto;
     padding-top: 118px;
     max-width: 360px;
     font-size: 26px;
     line-height: 1.62;
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero .hero-title {
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 118px;
+    max-width: 360px;
+    font-size: 26px;
+    line-height: 1.62;
+    text-align: center;
   }
 }
 
