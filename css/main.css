@@ -910,7 +910,17 @@ a.current::after {
   }
 }
 
-@media (min-width: 480px) {
+@media (max-width: 767px) {
+  .conteiner-benefits {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: auto;
+    margin-bottom: 60px;
+  }
+}
+
+@media (min-width: 768px) {
   .conteiner-benefits {
     width: 100%;
     padding-left: 15px;
@@ -937,7 +947,7 @@ a.current::after {
   }
 }
 
-@media (min-width: 480px) {
+@media (max-width: 767px) {
   .list-p {
     margin-bottom: 30px;
   }
@@ -1000,7 +1010,7 @@ a.current::after {
   text-transform: uppercase;
 }
 
-@media (min-width: 480px) {
+@media (max-width: 767px) {
   .section-title {
     text-align: center;
   }
@@ -1034,7 +1044,7 @@ a.current::after {
   background-image: url(../images/icon/astronaut.svg);
 }
 
-@media (min-width: 480px) {
+@media (max-width: 767px) {
   .employment {
     display: none;
   }
@@ -1091,17 +1101,32 @@ a.current::after {
   background-color: rgba(47, 48, 58, 0.8);
 }
 
-.command {
-  background-color: #F5F4FA;
-}
-
-@media (min-width: 480px) {
+@media (max-width: 767px) {
   .command {
     margin: auto;
+    background-color: #F5F4FA;
   }
 }
 
-@media (min-width: 480px) {
+@media (min-width: 768px) {
+  .command {
+    margin: auto;
+    background-color: #F5F4FA;
+  }
+}
+
+@media (max-width: 767px) {
+  .command-title {
+    padding-top: 60px;
+    padding-bottom: 30px;
+    font-size: 28px;
+    line-height: 1.17;
+    text-align: center;
+    color: #212121;
+  }
+}
+
+@media (min-width: 768px) {
   .command-title {
     padding-top: 60px;
     padding-bottom: 30px;
@@ -1127,7 +1152,7 @@ a.current::after {
   flex-wrap: wrap;
 }
 
-@media (min-width: 480px) {
+@media (max-width: 767px) {
   .card-command {
     margin-bottom: 30px;
     max-width: 450px;
@@ -1156,6 +1181,8 @@ a.current::after {
     flex-basis: calc((100% - 30px)/2);
     margin-right: 30px;
     margin-bottom: 30px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    background: #FFFFFF;
   }
 }
 
@@ -1184,7 +1211,7 @@ a.current::after {
   padding-bottom: 30px;
 }
 
-@media (min-width: 480px) {
+@media (max-width: 767px) {
   .name {
     padding-bottom: 16px;
     margin: 0;
@@ -1194,7 +1221,27 @@ a.current::after {
   }
 }
 
-@media (min-width: 480px) {
+@media (min-width: 768px) {
+  .name {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 16px;
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.17;
+    color: #212121;
+  }
+}
+
+@media (min-width: 1200px) {
+  .name {
+    display: flex;
+    padding-bottom: 10px;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 767px) {
   .position {
     padding-bottom: 16px;
     font-size: 16px;
@@ -1202,7 +1249,26 @@ a.current::after {
   }
 }
 
-@media (min-width: 480px) {
+@media (min-width: 768px) {
+  .position {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 16px;
+    font-size: 16px;
+    line-height: 1.17;
+  }
+}
+
+@media (min-width: 1200px) {
+  .position {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 16px;
+    margin: 0;
+  }
+}
+
+@media (max-width: 767px) {
   .conteiner-icon {
     display: flex;
     justify-content: space-around;
@@ -1214,8 +1280,11 @@ a.current::after {
 
 @media (min-width: 768px) {
   .conteiner-icon {
+    display: flex;
+    justify-content: space-around;
     margin-right: 74px;
     margin-left: 74px;
+    padding-bottom: 24px;
   }
 }
 

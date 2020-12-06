@@ -1,5 +1,5 @@
 .employment {
-    @include for-size(mobile) {
+    @include for-size(mobile-only) {
         display: none;
     }
     

@@ -1,13 +1,27 @@
 .command {
-  background-color: $secondary-accent;
-  
-  @include for-size(mobile) {
+  @include for-size(mobile-only) {
     margin: auto;
+    background-color: $secondary-accent;
+  }
+
+  @include for-size(tablet) {
+    margin: auto;
+    background-color: $secondary-accent;
   }
 }
 
 .command-title {
-  @include for-size (mobile) {
+  @include for-size (mobile-only) {
+    padding-top: 60px;
+    padding-bottom: 30px;
+      
+    font-size: 28px;
+    line-height: 1.17;
+    text-align: center;
+    color: $title-text-color;
+  }
+
+  @include for-size (tablet) {
     padding-top: 60px;
     padding-bottom: 30px;
       
@@ -33,7 +47,7 @@
 }
 
 .card-command {
-  @include for-size(mobile) {
+  @include for-size(mobile-only) {
     margin-bottom: 30px;
     max-width: 450px;
 
@@ -60,6 +74,9 @@
     flex-basis: calc((100% - 30px)/2);
     margin-right: 30px; 
     margin-bottom: 30px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+      background: $white-color;
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -87,11 +104,7 @@
 }
 
 .name {
-  // display: flex;
-  // 
-  // padding-bottom: 10px;
-  // justify-content: center;
-  @include for-size(mobile) {
+  @include for-size(mobile-only) {
     padding-bottom: 16px;
     margin: 0;
     font-size: 16px;
@@ -99,24 +112,52 @@
 
     color: $title-text-color;
   }
+
+  @include for-size(tablet) {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 16px;
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.17;
+
+    color: $title-text-color;
+  }
+
+  @include for-size(desktop) {
+    display: flex;
+    padding-bottom: 10px;
+    justify-content: center;
+  }
 }
 
 .position {
-  // display: flex;
-  // justify-content: center;
-  // padding-bottom: 16px;
-  // margin: 0;
-
-  @include for-size(mobile) {
+  @include for-size(mobile-only) {
     padding-bottom: 16px;
 
     font-size: 16px;
     line-height: 1.17;
   }
+
+  @include for-size(tablet) {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 16px;
+
+    font-size: 16px;
+    line-height: 1.17;
+  }
+
+  @include for-size(desktop) {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 16px;
+    margin: 0;
+  }
 }
 
 .conteiner-icon {
-  @include for-size(mobile) {
+  @include for-size(mobile-only) {
     display: flex;
     justify-content: space-around;
     margin-right: 122px;
@@ -125,8 +166,11 @@
   }
 
   @include for-size(tablet) {
+    display: flex;
+    justify-content: space-around;
     margin-right: 74px;
     margin-left: 74px;
+    padding-bottom: 24px;
   }
 
   @include for-size(desktop) {
@@ -136,11 +180,6 @@
   }
 
 }
-
-//   .conteiner-icon:last-child {
-//     margin-bottom: 0;
-//   }
-// }
 
 .svg-link {
   display: inline-flex;
