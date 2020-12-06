@@ -2,32 +2,60 @@ footer {
     background-color: $secondary-bgc;
 }
 
+.footer-contacts {
+    @include for-size(mobile) {
+        margin-bottom: 60px;
+       text-align: center;
+    }
+}
+
 .footer-logo {
-    display: inline-block;
-    margin-bottom: 20px;
-    margin-right: 0;  
-    margin-right: 93px;
-    text-decoration: none;
-    font-family: Raleway;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 26px;
-    line-height: 1.19;
+    // display: inline-block;
+    
+    // margin-right: 0;  
+    // margin-right: 93px;
+    // text-decoration: none;
+    // 
+    // font-size: 26px;
+    // line-height: 1.19;
     
     color: $white-color;
+
+    @include for-size(mobile) {
+        display: block;
+        margin-bottom: 20px;
+        padding-top: 60px;
+
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 1.17;
+       
+    }
 }
 
 .footer-conteiner {
-    display: flex;
-    align-items: baseline;
-    width: 1200px;
-    padding: 60px 15px;
-    margin: auto; 
+    // display: flex;
+    // align-items: baseline;
+    // 
+    // 
+    // margin: auto; 
+
+    @include for-size(desktop) {
+       width: 1200px;
+       padding: 60px 15px; 
+    }
 }
 
 .link-list {
     display: flex;
-    justify-content: space-around; 
+    // justify-content: space-around; 
+
+    @include for-size(mobile) {
+        justify-content: center;
+        margin-bottom: 60px;
+    }
 
 
     .footer-item {
@@ -41,17 +69,27 @@ footer {
 }
 
 .social-links {
-    margin-left: 70px;
-    margin-right: 93px;
+    @include for-size (mobile) {
+        text-align: center;
+    }
+
+    @include for-size(desktop){
+        margin-left: 70px;
+        margin-right: 93px;
+    }
 }
 
 .footer-title {
-margin-bottom: 20px;
-font-weight: bold;
-font-size: 14px;
-line-height: 1.14;
-text-transform: uppercase;
-color: $white-color;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: $white-color;
+
+    @include for-size(mobile){
+        text-align: center;
+    }
 }
 
 .footer-link {

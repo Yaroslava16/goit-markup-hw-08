@@ -541,8 +541,10 @@ p {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-subscription {
-  display: flex;
+@media (min-width: 480px) {
+  .form-subscription {
+    padding-bottom: 60px;
+  }
 }
 
 .subscription-field {
@@ -559,6 +561,13 @@ p {
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+}
+
+@media (min-width: 480px) {
+  .subscription-field {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }
 
 .subscription-field:-webkit-autofill, .subscription-field:-webkit-autofill:hover, .subscription-field:-webkit-autofill:focus {
@@ -606,6 +615,13 @@ p {
   border-radius: 4px;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media (min-width: 480px) {
+  .subscription-btn {
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 .subscription-btn-svg {
@@ -1323,31 +1339,46 @@ footer {
   background-color: #2F303A;
 }
 
+@media (min-width: 480px) {
+  .footer-contacts {
+    margin-bottom: 60px;
+    text-align: center;
+  }
+}
+
 .footer-logo {
-  display: inline-block;
-  margin-bottom: 20px;
-  margin-right: 0;
-  margin-right: 93px;
-  text-decoration: none;
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.19;
   color: #FFFFFF;
 }
 
-.footer-conteiner {
-  display: flex;
-  align-items: baseline;
-  width: 1200px;
-  padding: 60px 15px;
-  margin: auto;
+@media (min-width: 480px) {
+  .footer-logo {
+    display: block;
+    margin-bottom: 20px;
+    padding-top: 60px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 1.17;
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer-conteiner {
+    width: 1200px;
+    padding: 60px 15px;
+  }
 }
 
 .link-list {
   display: flex;
-  justify-content: space-around;
+}
+
+@media (min-width: 480px) {
+  .link-list {
+    justify-content: center;
+    margin-bottom: 60px;
+  }
 }
 
 .link-list .footer-item {
@@ -1358,9 +1389,17 @@ footer {
   margin-right: 0;
 }
 
-.social-links {
-  margin-left: 70px;
-  margin-right: 93px;
+@media (min-width: 480px) {
+  .social-links {
+    text-align: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .social-links {
+    margin-left: 70px;
+    margin-right: 93px;
+  }
 }
 
 .footer-title {
@@ -1370,6 +1409,12 @@ footer {
   line-height: 1.14;
   text-transform: uppercase;
   color: #FFFFFF;
+}
+
+@media (min-width: 480px) {
+  .footer-title {
+    text-align: center;
+  }
 }
 
 .footer-link {
