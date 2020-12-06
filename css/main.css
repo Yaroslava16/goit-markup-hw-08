@@ -1243,6 +1243,12 @@ a.current::after {
   margin-left: auto;
 }
 
+@media (min-width: 1200px) {
+  .clients-list {
+    margin-bottom: 94px;
+  }
+}
+
 .link-clients {
   display: flex;
   align-items: center;
@@ -1276,7 +1282,7 @@ a.current::after {
   }
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .clients-svg:nth-child(2n) {
     margin-right: 0;
   }
@@ -1288,7 +1294,7 @@ a.current::after {
   }
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .clients-svg:nth-child(3n) {
     margin-right: 0;
   }
@@ -1297,6 +1303,13 @@ a.current::after {
 @media (min-width: 1200px) {
   .clients-svg {
     min-width: 170px;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .clients-svg:last-child {
+    margin-right: 0;
   }
 }
 
