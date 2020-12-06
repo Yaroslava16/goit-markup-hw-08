@@ -45,6 +45,7 @@ footer {
     @include for-size(desktop) {
        width: 1200px;
        padding: 60px 15px; 
+       margin: 0;
     }
 }
 

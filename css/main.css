@@ -1367,6 +1367,7 @@ footer {
   .footer-conteiner {
     width: 1200px;
     padding: 60px 15px;
+    margin: 0;
   }
 }
 
