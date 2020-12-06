@@ -3,7 +3,7 @@
     text-align: center;
     color: $title-text-color;
 
-    @include for-size(mobile) {
+    @include for-size(mobile-only) {
       padding-top: 60px;
       padding-bottom: 30px;
       
@@ -27,13 +27,14 @@
   .clients-list {
     display: flex;
     flex-wrap: wrap;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .link-clients {
     display: flex;
     align-items: center;
     justify-content: center;
-    // width: 170px;
     height: 90px;
     color: $comand-icon;
     border: 1px solid $comand-icon;
@@ -66,7 +67,7 @@
     }
 
     &:nth-child(2n) {
-        @include for-size(mobile) {
+        @include for-size(mobile-only) {
         margin-right: 0;
         }
       }
@@ -80,12 +81,6 @@
     }
   }
 
-  // .clients-svg:last-child {
-  //   @include for-size(mobile) {
-  //     margin-right: 0;
-  //   }
-  // }
-  
   .icon-clients {
     fill: $comand-icon;
   

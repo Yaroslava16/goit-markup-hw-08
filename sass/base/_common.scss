@@ -49,7 +49,6 @@ p {
   margin: auto;
 
   @include for-size(mobile) {
-    margin: 0;
     width: 480px;
   }
 
