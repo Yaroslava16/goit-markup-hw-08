@@ -721,7 +721,6 @@ p {
 }
 
 .section-item {
-  flex-basis: calc((100% - 60px) / 3);
   border: 1px solid #eeeeee;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -852,8 +851,15 @@ a.current::after {
   }
 }
 
+@media (min-width: 768px) {
+  .card-set {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+  }
+}
+
 .section-item {
-  flex-basis: calc((100% - 60px) / 3);
   border: 1px solid #eeeeee;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -862,6 +868,26 @@ a.current::after {
 @media (max-width: 767px) {
   .section-item {
     margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  .section-item {
+    flex-basis: calc((100% - 30px)/2);
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  .section-item:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .section-item:nth-child(2n) {
+    margin-right: 0;
   }
 }
 
@@ -924,12 +950,29 @@ a.current::after {
     position: absolute;
     top: 0;
     left: 0;
-    padding: 72px 24px;
+    padding: 76px 24px;
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .text-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 48px 24px;
     width: 100%;
   }
 }
 
 @media (max-width: 767px) {
+  .capabilities {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+@media (min-width: 768px) {
   .capabilities {
     padding-left: 24px;
     padding-right: 24px;
@@ -953,6 +996,12 @@ a.current::after {
 }
 
 @media (max-width: 767px) {
+  .type-capabilities {
+    padding-bottom: 20px;
+  }
+}
+
+@media (min-width: 768px) {
   .type-capabilities {
     padding-bottom: 20px;
   }

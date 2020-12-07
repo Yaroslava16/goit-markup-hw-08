@@ -4,17 +4,22 @@
   }
 
 .card-set {
-    // display: flex;
-    // flex-wrap: wrap;
     // margin-bottom: 94px;
 
     @include for-size(mobile-only) {
       margin-bottom: 60px;
     }
+
+    @include for-size(tablet) {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 60px;
+    }
+
   }
 
 .section-item {
-  flex-basis: calc((100% - 60px) / 3);
+  // flex-basis: calc((100% - 60px) / 3);
   border: 1px solid $border-line;
   
   transition-duration: 250ms;
@@ -22,6 +27,24 @@
   
   @include for-size(mobile-only) {
     margin-bottom: 30px;
+  }
+
+  @include for-size(tablet) {
+    flex-basis: calc((100% - 30px)/2);
+    margin-right: 30px; 
+    margin-bottom: 30px; 
+  }
+
+  &:last-child {
+    @include for-size(tablet) {
+      margin-bottom: 0;
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
   }
 
   &:last-child {
@@ -96,7 +119,16 @@
       position: absolute;
       top: 0;
       left: 0;
-      padding: 72px 24px;
+      padding: 76px 24px;
+  
+      width: 100%;
+    }
+
+    @include for-size(tablet) {
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 48px 24px;
   
       width: 100%;
     }
@@ -108,6 +140,12 @@
       padding-left: 24px;
       padding-right: 24px;
     }
+
+    @include for-size(tablet) {
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+
   }
   
   .title-capabilities {
@@ -128,6 +166,10 @@
     color: $primary-text-color;
 
     @include for-size(mobile-only) {
+      padding-bottom: 20px;
+    }
+
+    @include for-size(tablet) {
       padding-bottom: 20px;
     }
     
