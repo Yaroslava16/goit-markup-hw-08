@@ -20,6 +20,14 @@
     @include for-size(mobile-only) {
         line-height: 1.50;
     }
+
+    @include for-size(tablet) {
+        line-height: 1.50;
+    }
+
+    @include for-size(tablet) {
+        line-height: 1.15;
+    }
 }
 
 .form-label {

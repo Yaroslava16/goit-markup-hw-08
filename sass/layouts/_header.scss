@@ -7,6 +7,7 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
     @include for-size(tablet) {
+        font-weight: bold;
         margin-right: 88px;
         font-size: 24px;
         line-height: 1.17;
@@ -68,6 +69,13 @@
     color: $title-text-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    @include for-size(tablet) {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;    
+    } 
 
     @include for-size(desktop) {
         font-weight: 500;
