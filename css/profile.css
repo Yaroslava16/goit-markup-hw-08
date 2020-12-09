@@ -337,13 +337,19 @@ p {
 
 .form-p {
   display: inline-block;
-  min-width: 450px;
+  max-width: 450px;
   margin-bottom: 12px;
   font-weight: bold;
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
   color: #212121;
+}
+
+@media (max-width: 767px) {
+  .form-p {
+    line-height: 1.50;
+  }
 }
 
 .form-label {

@@ -7,7 +7,7 @@
 
 .form-p {
     display: inline-block;
-    min-width: 450px;
+    max-width: 450px;
     margin-bottom: 12px;
     
 
@@ -16,6 +16,10 @@
     line-height: 1.15;
     text-align: center;
     color: $title-text-color;
+
+    @include for-size(mobile-only) {
+        line-height: 1.50;
+    }
 }
 
 .form-label {
