@@ -1,22 +1,27 @@
 .logo {
-    margin-top: 24px;
-    margin-right: 93px;
-    margin-bottom: 25px;
-    
     color: $title-text-color;
     text-decoration: none;
     font-family: Raleway;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 26px;
-    line-height: 1.19;
 
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-    // @include for-size(mobile-only) {
-    //     margin-right: 276px;
-    // }
+    @include for-size(tablet) {
+        margin-right: 88px;
+        font-size: 24px;
+        line-height: 1.17;
+    }
+
+    @include for-size(desktop) {
+        margin-top: 24px;
+        margin-right: 93px;
+        margin-bottom: 25px;
+
+        font-style: normal;
+        font-weight: bold;
+        font-size: 26px;
+        line-height: 1.19;
+    }
 
     &:hover {
         color: $accent-color;
@@ -45,13 +50,12 @@
         display: none;
     }
 
-
-    .item {
-        margin-right: 50px;
+    @include for-size(tablet) {
+        margin-right: 84px;
     }
 
-    .item:last-child {
-        margin-right: 0;
+    .item:not(:last-child) {
+        margin-right: 50px;
     }
 
     a.current:visited {
@@ -62,14 +66,15 @@
 .site-nav a,
 .auth-nav a {
     color: $title-text-color;
-    font-family: Roboto;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    @include for-size(desktop) {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;    
+    }  
 }
 
 .site-nav a:hover, 
@@ -91,29 +96,68 @@ a.current::after {
 } 
 
 .auth-nav {
-    display: flex;
-    margin-left: auto;
-
     @include for-size(mobile-only) {
         display: none;
     }
 
-    .item {
-        margin-right: 50px;
+    @include for-size(tablet) {
+        display: block;
     }
 
-    .item + .item {
-        margin-right: 50px;
+    @include for-size(desktop) {
+        display: flex;
+        margin-left: auto;
+    }
+
+
+    .item {
+        @include for-size(tablet) {
+            margin-right: 0;
+        }
+
+        @include for-size(desktop) {
+            margin-right: 30px;
+        }
+    }
+
+    .item:nth-child(1) {
+        @include for-size(tablet) {
+            margin-bottom: 10px;
+        }
+    }
+
+    .item:nth-child(1) {
+        @include for-size(desktop) {
+            margin-bottom: 0;
+        }
     }
 }
 
 .contacts a {
     color: $primary-text-color;
+
+    @include for-size(tablet) {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.02em;
+    }
+
+    @include for-size(desktop) {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;    
+    }  
 }
 
 .link-nav {
     display: flex;
 
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -124,11 +168,42 @@ a.current::after {
 }
 
 .svg-nav {
-    margin-right: 10px;
     fill: $primary-text-color;
 
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    @include for-size(tablet) {
+        margin-right: 8px;
+    }
+
+    @include for-size(desktop) {
+        margin-right: 10px;
+    }
+}
+
+.envelope {
+    @include for-size(tablet) {
+        width: 14px;
+        height: 10px;
+    }
+
+    @include for-size(desktop) {
+        width: 16px;
+        height: 12px;
+    }
+}
+
+.phone {
+    @include for-size(tablet) {
+        width: 10px;
+        height: 14px;
+    } 
+
+    @include for-size(tablet) {
+        width: 10px;
+        height: 16px;
+    } 
 }
 
 .mobile-menu {

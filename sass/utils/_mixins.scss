@@ -10,7 +10,7 @@
     } @else if $range == mobile {
       @media (min-width: $mobile) {
         @content;
-      }
+      } 
     } @else if $range == tablet {
       @media (min-width: $tablet) {
         @content;
