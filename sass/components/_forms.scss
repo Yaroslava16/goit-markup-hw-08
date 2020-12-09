@@ -120,6 +120,13 @@
     line-height: 1.71;
 
     color: $primary-text-color;
+
+    @include for-size(mobile-only) {
+        padding-left: 20px;
+        font-size: 12px;
+        line-height: 1.17;  
+    }
+  
 }
 
 .contract {
@@ -156,6 +163,10 @@
 
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    @include for-size(mobile-only) {
+        transform: translateY(-100%); 
+    }
 } 
 
 .form-subscription {

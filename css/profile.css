@@ -439,6 +439,14 @@ p {
   color: #757575;
 }
 
+@media (max-width: 767px) {
+  .agreement-label {
+    padding-left: 20px;
+    font-size: 12px;
+    line-height: 1.17;
+  }
+}
+
 .contract {
   color: #2196F3;
   text-decoration: underline;
@@ -471,6 +479,12 @@ p {
   background-image: url(../images/icon/check-active.svg);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media (max-width: 767px) {
+  .check-icon {
+    transform: translateY(-100%);
+  }
 }
 
 @media (max-width: 767px) {
