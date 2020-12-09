@@ -620,7 +620,7 @@ p {
 
 @media (min-width: 768px) {
   .subscription-field {
-    width: 100%;
+    width: 450px;
     margin-bottom: 20px;
   }
 }
@@ -1454,17 +1454,26 @@ a.current::after {
   background-color: rgba(47, 48, 58, 0.8);
 }
 
+.command {
+  background-color: #F5F4FA;
+}
+
 @media (max-width: 767px) {
   .command {
     margin: auto;
-    background-color: #F5F4FA;
+    padding-bottom: 60px;
   }
 }
 
 @media (min-width: 768px) {
   .command {
     margin: auto;
-    background-color: #F5F4FA;
+  }
+}
+
+@media (min-width: 768px) {
+  .command {
+    width: 100%;
   }
 }
 
@@ -1504,6 +1513,14 @@ a.current::after {
   .employment-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .employment-list {
+    display: flex;
+    justify-content: center;
   }
 }
 
@@ -1515,12 +1532,6 @@ a.current::after {
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     background: #FFFFFF;
-  }
-}
-
-@media (max-width: 767px) {
-  .card-command:last-child {
-    margin-bottom: 60px;
   }
 }
 
@@ -1710,9 +1721,16 @@ a.current::after {
   margin-left: auto;
 }
 
+@media (min-width: 768px) {
+  .clients-list {
+    padding-bottom: 60px;
+  }
+}
+
 @media (min-width: 1200px) {
   .clients-list {
     margin-bottom: 94px;
+    padding-bottom: 0;
   }
 }
 
@@ -1758,6 +1776,12 @@ a.current::after {
 @media (min-width: 768px) {
   .clients-svg {
     min-width: 226px;
+  }
+}
+
+@media (min-width: 768px) {
+  .clients-svg:nth-child(n + 4) {
+    margin-bottom: 0;
   }
 }
 
@@ -1853,12 +1877,6 @@ footer {
   }
 }
 
-@media (min-width: 768px) {
-  .footer-conteiner {
-    padding-bottom: 60px;
-  }
-}
-
 @media (min-width: 1200px) {
   .footer-conteiner {
     display: flex;
@@ -1868,6 +1886,16 @@ footer {
     margin: 0;
     margin-right: auto;
     margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-conteiner {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-bottom: 60px;
   }
 }
 
@@ -1912,6 +1940,7 @@ footer {
   .footer-tablet {
     display: flex;
     justify-content: center;
+    margin-bottom: 60px;
   }
 }
 

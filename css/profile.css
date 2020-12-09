@@ -519,7 +519,7 @@ p {
 
 @media (min-width: 768px) {
   .subscription-field {
-    width: 100%;
+    width: 450px;
     margin-bottom: 20px;
   }
 }
@@ -1355,12 +1355,6 @@ footer {
   }
 }
 
-@media (min-width: 768px) {
-  .footer-conteiner {
-    padding-bottom: 60px;
-  }
-}
-
 @media (min-width: 1200px) {
   .footer-conteiner {
     display: flex;
@@ -1370,6 +1364,16 @@ footer {
     margin: 0;
     margin-right: auto;
     margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-conteiner {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-bottom: 60px;
   }
 }
 
@@ -1414,6 +1418,7 @@ footer {
   .footer-tablet {
     display: flex;
     justify-content: center;
+    margin-bottom: 60px;
   }
 }
 

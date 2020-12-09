@@ -1,12 +1,17 @@
 .command {
+  background-color: $secondary-accent;
+
   @include for-size(mobile-only) {
     margin: auto;
-    background-color: $secondary-accent;
+    padding-bottom: 60px;
   }
 
   @include for-size(tablet) {
     margin: auto;
-    background-color: $secondary-accent;
+  }
+
+  @include for-size(tablet) {
+    width: 100%;
   }
 }
 
@@ -44,7 +49,13 @@
 .employment-list {
   @include for-size(tablet) {
     display: flex;
-  flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  @include for-size(desktop) {
+    display: flex;
+    justify-content: center;
   }
 }
 
@@ -62,10 +73,6 @@
   }
 
   &:last-child {
-    @include for-size(mobile-only) {
-      margin-bottom: 60px;
-    }
-
     @include for-size(desktop) {
       margin-right: 0;
     }

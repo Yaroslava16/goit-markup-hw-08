@@ -60,10 +60,6 @@ footer {
 }
 
 .footer-conteiner {
-    @include for-size(tablet) {
-        padding-bottom: 60px;
-    }
-
     @include for-size(desktop) {
        display: flex;
        align-items: baseline;
@@ -75,9 +71,18 @@ footer {
     }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .footer-conteiner {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding-bottom: 60px;
+    }
+}
+
 .link-list {
     display: flex;
-    // justify-content: space-around; 
 
     @include for-size(mobile-only) {
         justify-content: center;
@@ -111,6 +116,7 @@ footer {
     @include for-size(tablet) {
         display: flex;
         justify-content: center;
+        margin-bottom: 60px;
     }
 
     @include for-size(desktop) {
