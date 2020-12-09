@@ -1,3 +1,8 @@
+.header {
+    border-bottom: 1px solid  rgba(236, 236, 236, 1);
+    margin-bottom: 94px;
+}
+
 .logo {
     color: $title-text-color;
     text-decoration: none;
@@ -242,7 +247,7 @@ a.current::after {
     &.is-open {
         @include for-size(mobile-only) {
             display: block;  
-            z-index: 55;
+            z-index: 150;
         }
     }
 }

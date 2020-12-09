@@ -827,6 +827,11 @@ p {
   margin-right: 8px;
 }
 
+.header {
+  border-bottom: 1px solid #ececec;
+  margin-bottom: 94px;
+}
+
 .logo {
   color: #212121;
   text-decoration: none;
@@ -1106,7 +1111,7 @@ a.current::after {
 @media (max-width: 767px) {
   .mobile-menu.is-open {
     display: block;
-    z-index: 55;
+    z-index: 150;
   }
 }
 
