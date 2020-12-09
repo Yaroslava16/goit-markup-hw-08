@@ -6,6 +6,13 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
+    @include for-size(mobile-only) {
+        font-weight: bold;
+        margin-right: 88px;
+        font-size: 24px;
+        line-height: 1.17;
+    }
+
     @include for-size(tablet) {
         font-weight: bold;
         margin-right: 88px;
@@ -181,6 +188,10 @@ a.current::after {
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
+    @include for-size(mobile-only) {
+        margin-right: 10px;
+    }
+
     @include for-size(tablet) {
         margin-right: 8px;
     }
@@ -255,6 +266,10 @@ a.current::after {
 
 .current {
     display: inline-block;
+}
+
+a.current:visited {
+    color: $accent-color;
 }
 
 .mobile-menu-item .current::after {
