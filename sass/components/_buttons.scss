@@ -1,3 +1,25 @@
+.mobile-menu-btn {
+  display: none;
+  border: none;
+  background-color: inherit;
+
+  .icon-cross {
+    display: none;
+  }
+
+  &.is-open .icon-cross {
+    display: block;
+  }
+
+  &.is-open .icon-menu {
+    display: none;
+  }
+
+  @include for-size(mobile-only) {
+    display: block;
+  }
+}
+
 .hero-btn {
   display: flex;
   align-items: center;

@@ -599,6 +599,30 @@ p {
   color: rgba(255, 255, 255, 0.6);
 }
 
+.mobile-menu-btn {
+  display: none;
+  border: none;
+  background-color: inherit;
+}
+
+.mobile-menu-btn .icon-cross {
+  display: none;
+}
+
+.mobile-menu-btn.is-open .icon-cross {
+  display: block;
+}
+
+.mobile-menu-btn.is-open .icon-menu {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .mobile-menu-btn {
+    display: block;
+  }
+}
+
 .hero-btn {
   display: flex;
   align-items: center;
@@ -789,9 +813,22 @@ p {
   align-items: center;
 }
 
+@media (max-width: 767px) {
+  .main-nav {
+    justify-content: space-between;
+    flex-grow: 1;
+  }
+}
+
 .site-nav {
   display: flex;
   padding-top: 32px;
+}
+
+@media (max-width: 767px) {
+  .site-nav {
+    display: none;
+  }
 }
 
 .site-nav .item {
@@ -841,6 +878,12 @@ a.current::after {
   margin-left: auto;
 }
 
+@media (max-width: 767px) {
+  .auth-nav {
+    display: none;
+  }
+}
+
 .auth-nav .item {
   margin-right: 50px;
 }
@@ -869,6 +912,81 @@ a.current::after {
   fill: #757575;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-menu {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: 60px;
+  width: auto;
+  background-color: #FFFFFF;
+  z-index: 55;
+  border-top: 1px solid #ececec;
+  opacity: 0;
+  visibility: hidden;
+}
+
+@media (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .mobile-menu .is-open {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.mobile-menu-list {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.mobile-menu-item:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.mobile-menu-item a {
+  color: #212121;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+}
+
+.current {
+  display: inline-block;
+}
+
+@media (max-width: 767px) {
+  .mobile-menu-item .current::after {
+    content: "";
+    width: 100%;
+    margin-top: 8px;
+    height: 4px;
+    border-radius: 2px;
+    color: #2196F3;
+    background-color: #2196F3;
+  }
+}
+
+.mobile-auth-nav {
+  text-align: center;
+}
+
+.mobile-link-nav {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+}
+
+.menu-item:nth-child(1) {
+  margin-bottom: 16px;
 }
 
 .section-link {
