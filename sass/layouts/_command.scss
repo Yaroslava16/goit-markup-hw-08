@@ -2,15 +2,13 @@
   background-color: $secondary-accent;
 
   @include for-size(mobile-only) {
-    margin: auto;
+    position: relative;
+    width: 100%;
     padding-bottom: 60px;
   }
 
   @include for-size(tablet) {
     margin: auto;
-  }
-
-  @include for-size(tablet) {
     width: 100%;
   }
 }
@@ -47,6 +45,12 @@
 }
 
 .employment-list {
+  @include for-size(mobile-only) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
   @include for-size(tablet) {
     display: flex;
     flex-wrap: wrap;

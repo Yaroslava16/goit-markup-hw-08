@@ -3,6 +3,16 @@
   border: none;
   background-color: inherit;
 
+  &:hover .mobile-btn-svg,
+  &:focus .mobile-btn-svg {
+        fill: $accent-color;  
+    }
+
+    &:hover,
+    &:focus {
+      cursor: pointer;
+    }
+
   .icon-menu {
     display: none;
   }

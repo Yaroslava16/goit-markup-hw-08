@@ -247,7 +247,7 @@ a.current::after {
     &.is-open {
         @include for-size(mobile-only) {
             display: block;  
-            z-index: 150;
+            z-index: 55;
         }
     }
 }

@@ -37,7 +37,6 @@ footer {
     @include for-size(tablet) {
         display: block;
         margin-bottom: 20px;
-        padding-top: 60px;
 
         font-family: Raleway;
         font-style: normal;
@@ -117,6 +116,7 @@ footer {
         display: flex;
         justify-content: center;
         margin-bottom: 60px;
+        margin-top: 60px;
     }
 
     @include for-size(desktop) {
@@ -137,7 +137,6 @@ footer {
     }
 
     @include for-size(tablet) {
-        padding-top: 60px;
         text-align: center;
     }
 

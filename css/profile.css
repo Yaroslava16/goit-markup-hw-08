@@ -537,6 +537,15 @@ p {
   background-color: inherit;
 }
 
+.mobile-menu-btn:hover .mobile-btn-svg,
+.mobile-menu-btn:focus .mobile-btn-svg {
+  fill: #2196F3;
+}
+
+.mobile-menu-btn:hover, .mobile-menu-btn:focus {
+  cursor: pointer;
+}
+
 .mobile-menu-btn .icon-menu {
   display: none;
 }
@@ -729,7 +738,7 @@ p {
 .mail-phone a {
   color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
-  line-height: 1, 71;
+  line-height: 1.71;
 }
 
 .mail {
@@ -1047,7 +1056,7 @@ a.current::after {
 @media (max-width: 767px) {
   .mobile-menu.is-open {
     display: block;
-    z-index: 150;
+    z-index: 55;
   }
 }
 
@@ -1212,7 +1221,6 @@ a.current:visited {
   position: relative;
   overflow: hidden;
   margin-bottom: 20px;
-  z-index: 40;
 }
 
 .thumb::before {
@@ -1350,7 +1358,6 @@ footer {
   .footer-logo {
     display: block;
     margin-bottom: 20px;
-    padding-top: 60px;
     font-family: Raleway;
     font-style: normal;
     font-weight: bold;
@@ -1435,6 +1442,7 @@ footer {
     display: flex;
     justify-content: center;
     margin-bottom: 60px;
+    margin-top: 60px;
   }
 }
 
@@ -1461,7 +1469,6 @@ footer {
 
 @media (min-width: 768px) {
   .footer-title {
-    padding-top: 60px;
     text-align: center;
   }
 }
