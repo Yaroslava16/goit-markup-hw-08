@@ -115,10 +115,6 @@
 }
 
 .agreement-label {
-    padding-left: 30px;
-    font-size: 14px;
-    line-height: 1.71;
-
     color: $primary-text-color;
 
     @include for-size(mobile-only) {
@@ -126,7 +122,18 @@
         font-size: 12px;
         line-height: 1.17;  
     }
-  
+
+    @include for-size(tablet) {
+        padding-left: 20px;
+        font-size: 12px;
+        line-height: 1.17;  
+    }
+
+    @include for-size(desktop) {
+        padding-left: 30px;
+        font-size: 14px;
+        line-height: 1.71;
+    }
 }
 
 .contract {
@@ -153,7 +160,7 @@
     position: absolute;
     display: flex; 
     margin-left: -20px;
-    transform: translateY(-130%);
+    transform: translateY(-100%);
 
     width: 15px;
     height: 15px;
@@ -164,8 +171,8 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-    @include for-size(mobile-only) {
-        transform: translateY(-100%); 
+    @include for-size(desktop) {
+        transform: translateY(-130%);
     }
 } 
 
