@@ -142,8 +142,8 @@ a.current::after {
     background-color: $white-color;
     z-index: 55;
     border-top: 1px solid  rgba(236, 236, 236, 1);
-    opacity: 0;
-    visibility: hidden;
+    // opacity: 0;
+    // visibility: hidden;
     @include for-size(tablet) {
         display: none;
     }
@@ -151,8 +151,8 @@ a.current::after {
     .is-open {
         @include for-size(mobile-only) {
             display: block;
-            opacity: 1;
-            visibility: visible;
+            // opacity: 1;
+            // visibility: visible;
         }
     }
 }
