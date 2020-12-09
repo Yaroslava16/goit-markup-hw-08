@@ -107,8 +107,6 @@ a.current::after {
     }
 }
 
-
-
 .contacts a {
     color: $primary-text-color;
 }
@@ -140,19 +138,17 @@ a.current::after {
     padding: 60px;
     width: auto;
     background-color: $white-color;
-    z-index: 55;
+    
     border-top: 1px solid  rgba(236, 236, 236, 1);
-    // opacity: 0;
-    // visibility: hidden;
+    
     @include for-size(tablet) {
         display: none;
     }
     
-    .is-open {
+    &.is-open {
         @include for-size(mobile-only) {
-            display: block;
-            // opacity: 1;
-            // visibility: visible;
+            display: block;  
+            z-index: 55;
         }
     }
 }

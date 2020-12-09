@@ -890,7 +890,6 @@ a.current::after {
   padding: 60px;
   width: auto;
   background-color: #FFFFFF;
-  z-index: 55;
   border-top: 1px solid #ececec;
 }
 
@@ -901,8 +900,9 @@ a.current::after {
 }
 
 @media (max-width: 767px) {
-  .mobile-menu .is-open {
+  .mobile-menu.is-open {
     display: block;
+    z-index: 55;
   }
 }
 
