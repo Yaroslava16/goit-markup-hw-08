@@ -319,15 +319,6 @@ p {
   }
 }
 
-.line {
-  border-bottom: 1px solid #ececec;
-  width: auto;
-}
-
-.header-p {
-  margin-bottom: 94px;
-}
-
 .form {
   width: 100%;
   padding: 40px;
@@ -1086,6 +1077,12 @@ a.current::after {
 
 .menu-item:nth-child(1) {
   margin-bottom: 16px;
+}
+
+.header-p {
+  width: auto;
+  margin-bottom: 94px;
+  border-bottom: 1px solid #ececec;
 }
 
 .invisible {
